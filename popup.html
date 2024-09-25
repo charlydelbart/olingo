@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Sentence Translator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="difficulty-selection" id="difficultySelection">
+      <h2>Choisissez la difficulté :</h2>
+      <button class="difficulty-button" id="easy">Facile</button>
+      <button class="difficulty-button" id="medium">Moyen</button>
+      <button class="difficulty-button" id="hard">Difficile</button>
+    </div>
+    
+    <h1>Traduisez ces phrases en anglais :</h1>
+    <progress id="progressBar" value="0" max="100"></progress>
+    <p id="sentence"></p>
+    <textarea id="translation" placeholder="Écrivez votre traduction ici..."></textarea>
+    <button id="checkTranslation">Vérifier la traduction</button>
+    <p id="feedback"></p>
+    <button id="nextSentence" style="display: none;">Suivant</button> <!-- Bouton "Suivant" -->
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
